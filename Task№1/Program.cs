@@ -6,9 +6,17 @@ Console.Write("Enter second number: ");
 int B = int.Parse(Console.ReadLine()!);
 
 int C = 1;
-for (int i = 0; i < B; i++)
+
+Console.Write($"{Getmultiplication(C)}");
+
+int Getmultiplication (int C)
 {
-    C *= A;
+    for (int i = 0; i < B; i++)
+    {
+        C *= A;
+    }
+    return C;
 }
 
-Console.Write($"Число {A} в степени {B} является {C}");
+
+
